@@ -1,0 +1,51 @@
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+
+    name[Group1] = "Portuguese-US Hybrid (localv2)";
+
+    include "us(basic)"
+    include "level3(ralt_switch)"
+
+    // Acute + diaeresis using AC11 (' / ")
+    key <AC11> { [ apostrophe, quotedbl, dead_acute, dead_diaeresis ] };
+
+    // Grave + tilde using TLDE (` / ~)
+    key <TLDE> { [ grave, asciitilde, dead_grave, dead_tilde ] };
+
+    // Dead circumflex on AltGr+6
+    key <AE06> { [ 6, asciicircum, dead_circumflex, dead_circumflex ] };
+
+    // Cedilla
+    key <AB03> { [ c, C, ccedilla, Ccedilla ] };
+
+
+
+
+    // Direct acute vowels
+    key <AC01> { [ a, A, aacute, Aacute ] };
+    key <AD03> { [ e, E, eacute, Eacute ] };
+    key <AD08> { [ i, I, iacute, Iacute ] };
+    key <AD09> { [ o, O, oacute, Oacute ] };
+    key <AD07> { [ u, U, uacute, Uacute ] };
+
+    // direct with 1 key 1 ! º ª
+    key <AE01> { [ 1, exclam, U00BA, U00AA ] };
+    // direct with 2 key
+    key <AE02> { [ 2, at, atilde, Atilde ] };
+    // direct with 3 key
+    key <AE03> { [ 3, numbersign, otilde, Otilde ] };
+    // direct with 4 key
+    key <AE04> { [ 4, dollar, EuroSign, sterling ] };
+
+    // ,  <  «
+    key <AB08> { [ comma, less, guillemotleft ] };
+    // .  >  »
+    key <AB09> { [ period, greater, guillemotright ] };
+    // = + ± ±
+    key <AE12> { [ equal, plus, plusminus, plusminus ] }; 
+    // - _ — —
+    key <AE11> { [ minus, underscore, emdash, emdash ] }; 
+
+
+};
+
