@@ -1,5 +1,19 @@
 # dotfiles
-linux config files
+linux config files 
+This is ment for Debian 13 trisxie 
+
+----
+ghosty 
+
+Instalation via deb repo:
+https://debian.griffo.io/io
+run fonts required:
+setup-fonts.sh
+apply dotfilesd
+
+
+
+----
 xkb - custom lay ut for ANSI-US keyboard to PT-pt
 
 This symlink allows gnome (maybe others) to show layout map in keyboard settings
