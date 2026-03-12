@@ -22,4 +22,13 @@ sudo ln -s ~/.config/xkb/symbols/ptus /usr/share/X11/xkb/symbols
 More detailed information
 https://codeaffen.org/2023/09/16/custom-keyboard-layouts-with-xkb/
 
+---
+LazyVim
+
+Install latest neovim from github (installed with AppImage)
+for user install move to ~/bin (.profile already includes the PATH for the directory)
+sudo apt install -y git curl ripgrep fd-find build-essential xclip
+include .config/nvim files
+
+
 this document is under development 
